@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Kerala Tourism
+
+    </title>
+  
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="style2.css"></link>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-primary navbar-custom sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item"> 
+              <a class="nav-link active" href="index.html">Mysite</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Categories</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Gallery</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link navbar-right active" href="signup.html" tabindex="-1" aria-disabled="true">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="login.html" tabindex="-1" aria-disabled="true">Log In</a>
+          </li>
+        </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+          </form>
+        </div>
+      </nav>
+    
+      <div class="heading2">
+        <p> Sign Up</p>
+    </div>
+
+     <div class="transbox container col-md-5 col-md-offset-1">
+     <div class="jumbotron">
+
+        <form action="Signup.html" id="formId" onsubmit="(validate()); return false" >
+
+            <div class="form-group">
+                <label for="full-name">Full-Name* </label>
+                <input type="name" class="form-control" id="name" placeholder="Enter your name" name="full-name">
+            </div>
+            <div class="form-group">
+              <label for="gender" id="gender">Gender:-</label>
+
+              <!-- <input id="male"type="radio" name="gender" value="Male"> Male 
+              <input id="fem" type="radio" name="gender" value="Female"> Female
+              <input type="radio" name="gender" id="prefer" value="Prefer Not to Say"> Prefer Not To Say -->
+
+              
+              <select id="genderSel" name="gender">
+                <option value="male"> Male </option>
+                <option value="female"> Female </option>
+                <option value="Prefer Not to Say"> Prefer Not to Say</option>
+              </select> 
+              
+
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email address" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date of Birth*</label>
+                <input type="date" class="form-control" id="date" placeholder="Enter your birth date" name="date">
+            </div> 
+            <div class="form-group">
+                <label for="date" onmouseover="phInfo();">Phone Number</label>
+                <input type="phone" class="form-control" id="phone" placeholder="Enter your Phone Number" name="date" optional>
+            </div> 
+            <div>
+              <label for="#" id="phInfo"> </label>
+            </div>
+
+
+            <div class="form-group">
+                <label for="pwd">Password*</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter a password" name="pswd">
+            </div>
+
+            <div>
+                <label for="format"> <span id="pFormat">Your Password Must Contain- </span>
+                  <ul id="PassList">
+                    <li class="pass-item">Minimum of 8 Characters</li>
+                    <!-- <li id="empty-item">Miniumum 8 Characters</li> -->
+                    <li class="pass-item">One Uppercase Character</li>
+                  
+                    <li class="pass-item">One Lowercase Character</li>
+                    
+                    
+                    <li class="pass-item">One Number</li>
+                  </ul> 
+                </label>
+
+            </div>
+
+            <div class="form-group">
+                <label for="pwd">Confirm Password*</label>
+                <input type="password" class="form-control" id="pwd2" placeholder="Re-enter your password" name="pswd">
+            </div>
+            <div>
+              <label for="#" id="reqInfo"> All fields marked with a * are mandatory</label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="Agreement" checked> I agree to the Terms and Conditions
+                </label>
+            </div>
+            
+              <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+        <!-- <form action="Signup.html">
+            <input type="email" required>
+            <input type="password" name="password" id="pwd" required>
+            <input type="submit" value="LOG IN">
+                </form> -->
+                <!-- onsubmit="return !!(passvalidate() & validate()); -->
+</div>
+</div>  
+
+<div class="footer">
+  
+    <div id="socialSharing" style="margin-left: 2rem;">
+      <!-- <a href="http://www.facebook.com/sharer.php?url=https://www.facebook.com/"> Facebook -->
+          <span id="facebook" class="fa-stack fa-lg">Facebook
+            <img src="facebook-icont.png" id="fb" alt="no image" style="height: 35px; width: 40px;" >
+              <i class="fa fa-facebook fa-stack-1x"></i>
+          </span>
+      </a>
+      <!-- <a href="http://twitter.com/share?text=Check out this Website! &url=https://twitter.com/explore">Twitter -->
+          <span id="twitter" class="fa-stack fa-lg">Twitter
+              <i class="fa fa-twitter fa-stack-1x"></i><span><img src="tweet.png" alt="no image" style="height: 35px; width: 40px;"></span>
+          </span>
+      </a>
+      
+      <a href="https://plus.google.com/share?url=https://support.google.com/plus/?hl=en#topic=9259565" target="_blank">Google Plus
+        <span id="Gplus" class="fa-stack fa-lg">
+          <i class="fa fa-twitter fa-stack-1x"></i><span><img src="download.png" alt="no image" style="height: 35px; width: 40px;"></span>
+      </span>
+    </a>
+
+    </div>
+</div>
+
+
+<script src="signup.js"> </script> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
